@@ -11,7 +11,7 @@
 <main>
   <p><a href="index.html">← Anillamiento</a></p>
   <h1>Política de privacidad</h1>
-  <p class="subtitulo">Última actualización: 22 de noviembre de 2026</p>
+  <p class="subtitulo">Última actualización: 23 de noviembre de 2026</p>
 
   <h2>Resumen</h2>
   <p>Anillamiento guarda los datos en el propio aparato. No tiene servidores propios, no muestra publicidad, no usa herramientas de analítica ni de seguimiento y no vende ni cede datos a terceros.</p>
@@ -19,6 +19,7 @@
   <h2>Qué datos maneja</h2>
   <ul>
     <li><strong>Datos de las jornadas:</strong> fecha, estación, redes, participantes, meteorología, y las capturas (anilla, especie, medidas, observaciones…). Los introduce el equipo y se guardan en el aparato.</li>
+    <li><strong>Agendas:</strong> estaciones (nombre, localidad, coordenadas, redes…) y colaboradores del equipo (nombre, código de anillador y, si se anotan, teléfono y correo). Las introduce el equipo y se guardan en el aparato.</li>
     <li><strong>Fotos de las capturas</strong>, si se hacen: se guardan en el aparato.</li>
     <li><strong>Ubicación:</strong> solo cuando el usuario pulsa el botón para tomar las coordenadas de una estación o para centrar el mapa en su posición. No se registra la ubicación en segundo plano.</li>
   </ul>
@@ -28,12 +29,13 @@
     <li><strong>Open-Meteo</strong> (open-meteo.com): al pedir la meteorología de una jornada, la app envía las coordenadas de la estación y la fecha para obtener temperatura, nubosidad, lluvia y viento; al tomar las coordenadas de una estación, envía esas coordenadas para obtener su altitud. No se envía ningún otro dato.</li>
     <li><strong>Mapas</strong> (OpenStreetMap, tile.openstreetmap.org, y ortofoto PNOA del Instituto Geográfico Nacional, ign.es): al elegir las coordenadas de una estación en el mapa, la app descarga las imágenes de la zona que se está viendo. Esos servidores reciben qué zona del mapa se pide, como ocurre al ver cualquier mapa en internet. No se envía ningún otro dato.</li>
     <li><strong>Búsqueda de lugares</strong> (Nominatim de OpenStreetMap, nominatim.openstreetmap.org): al buscar un lugar en el mapa, la app envía el texto escrito para obtener sus coordenadas. No se envía ningún otro dato.</li>
+    <li><strong>Actualizaciones</strong> (GitHub, api.github.com): si se configura un token de acceso, la app consulta en un repositorio privado del equipo si hay una versión nueva y, si el usuario lo acepta, la descarga. Solo se envía la consulta con ese token; no se envía ningún dato de las jornadas ni del aparato. El token se guarda en el aparato y viaja a los demás aparatos de la misma cuenta con la sincronización de Google Drive.</li>
     <li><strong>Enlaces externos</strong> (guías de especies, webs de cantos): se abren en el navegador del aparato; la app no envía datos a esas webs.</li>
     <li><strong>Reconocimiento de escritura</strong> (Google ML Kit): el modelo se descarga una vez y la escritura se reconoce en el propio aparato.</li>
   </ul>
 
   <h2>Google Drive (opcional)</h2>
-  <p>Si el usuario conecta una cuenta de Google, la app guarda en el Google Drive de esa cuenta, en una carpeta «Anillamiento», las copias de seguridad y los archivos de sincronización de las jornadas, para que los aparatos del equipo conectados a la misma cuenta compartan los datos.</p>
+  <p>Si el usuario conecta una cuenta de Google, la app guarda en el Google Drive de esa cuenta, en una carpeta «Anillamiento», las copias de seguridad y los archivos de sincronización de las jornadas y de las agendas de estaciones y colaboradores (incluidos los teléfonos y correos anotados), para que los aparatos del equipo conectados a la misma cuenta compartan los datos.</p>
   <ul>
     <li>La app solo pide el permiso <code>drive.file</code>: puede ver y modificar únicamente los archivos que ella misma crea. No tiene acceso al resto de archivos del Drive.</li>
     <li>Los datos viajan directamente entre el aparato y la cuenta de Google del usuario. No pasan por ningún otro servidor.</li>
